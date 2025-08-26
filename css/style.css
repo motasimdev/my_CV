@@ -1,58 +1,47 @@
+
 *{
     margin: 0;
     padding: 0;
 }
-/* From Uiverse.io by adamgiebl */ 
+a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.main{
+    width: 1170px;
+    text-align: center;
+}
+/* From Uiverse.io by lenfear23 */ 
 button {
-  border: none;
-  display: block;
-  position: relative;
-  padding: 0.7em 2.4em;
-  font-size: 18px;
-  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
   cursor: pointer;
-  user-select: none;
-  overflow: hidden;
-  color: royalblue;
-  z-index: 1;
-  font-family: inherit;
-  font-weight: 500;
-}
-
-button span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  border: 4px solid royalblue;
-}
-
-button span::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 8%;
-  height: 500%;
-  background: var(--lightgray);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-60deg);
-  transition: all 0.3s;
-}
-
-button:hover span::before {
-  transform: translate(-50%, -50%) rotate(-90deg);
-  width: 100%;
-  background: royalblue;
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
 }
 
 button:hover {
-  color: white;
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
 
-button:active span::before {
-  background: #2751cd;
+button:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
+
+button:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+
