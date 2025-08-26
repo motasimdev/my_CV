@@ -1,13 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-}
-a{
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-block;
-}
 .main{
     width: 1170px;
     text-align: center;
